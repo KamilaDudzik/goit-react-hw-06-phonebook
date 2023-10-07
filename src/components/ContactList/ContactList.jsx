@@ -8,7 +8,7 @@ const showContacts = (contacts, filteredContacts) => {
   if (filteredContacts === "") {
     return contacts
   } else {
-    return contacts.filter(contact => contact.name.toLowerCase().include(filteredContacts.filter))
+    return contacts.filter(contact => contact.name.toLowerCase().includes(filteredContacts.filter))
   }
 }
 
